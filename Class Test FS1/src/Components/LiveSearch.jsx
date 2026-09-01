@@ -11,7 +11,9 @@ function LiveSearch() {
     "Priya",
     "Ananya",
     "Neha",
-    "Kavya"
+    "Kavya",
+    "Arpit",
+    "Abhay"
   ];
 
   const [search, setSearch] = useState("");
