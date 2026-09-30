@@ -4,62 +4,65 @@ Solutions to the Full Stack Web Development class test.
 
 ## Topics Covered
 
-* Node.js Event Loop
-* Node.js Modules and `module.exports`
-* Express Middleware and Authentication
-* REST API Development
-* HTTP Status Codes and Error Handling
-* React Hooks and Fetch API
-* CORS Configuration
+- Node.js Event Loop
+- Node.js Modules
+- Express Middleware and Routing
+- REST API Development
+- Error Handling
+- React Fetch API and useEffect
+- CORS Configuration
 
 ## Project Structure
 
-* `node-basics/` — Node.js event loop and modules
-* `express-api/` — Express REST API for books
-* `react-client/` — React frontend
+- node-basics/ - Node.js programs
+- express-api/ - Express REST API
+- react-client/src/ - React frontend
 
 ## Requirements
 
-* Node.js and npm
-* A web browser
-* Postman (optional, for API testing)
+- Node.js
+- npm
+- Web browser
 
-## Run the Backend
+## Run Backend
 
-```bash
-cd express-api
-npm install
-npm start
-```
+Open terminal inside express-api:
 
-The API runs at `http://localhost:5000`.
+    npm install
+    npm start
 
-## Run the Frontend
+Backend URL: http://localhost:5000
 
-Create a React application using Vite, place the React files in its `src` folder, and run:
+## Run Frontend
 
-```bash
-npm install
-npm run dev -- --port 3000
-```
+Create a React project using Vite and place
+App.jsx and BookList.jsx inside its src folder.
 
-Open `http://localhost:3000`.
+Then run:
+
+    npm install
+    npm run dev -- --port 3000
+
+Frontend URL: http://localhost:3000
 
 ## API Endpoints
 
-| Method | Endpoint         | Description                      |
-| ------ | ---------------- | -------------------------------- |
-| GET    | `/api/books`     | Get all books                    |
-| GET    | `/api/books/:id` | Get a book by ID                 |
-| POST   | `/api/books`     | Create a book (API key required) |
-| DELETE | `/api/books/:id` | Delete a book                    |
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | /api/books | Get all books |
+| GET | /api/books/:id | Get book by ID |
+| POST | /api/books | Create book |
+| DELETE | /api/books/:id | Delete book |
 
 ## Notes
 
-* Books are stored in memory and reset when the server restarts.
-* The POST endpoint requires the `x-api-key: secret123` header for demonstration.
-* CORS is configured for local development at `http://localhost:3000`.
+- Books are stored in an in-memory array.
+- POST requires the x-api-key header with value secret123.
+- CORS is configured for localhost:3000.
+- Data resets when the server restarts.
 
 ## License
+
+For educational use.
 
 For educational use.
